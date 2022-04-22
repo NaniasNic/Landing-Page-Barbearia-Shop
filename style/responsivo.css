@@ -1,0 +1,227 @@
+/* Ocultando Menu Mobile */
+header nav.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+    /* Logo */
+    header .logo{
+        width: 20%;
+    }
+
+    /* Botões */
+    .botao{
+        width: 40%;
+        justify-content: center;
+    }
+    .botao1 input{
+        padding: 15px 20px;
+        font-size: 10px;
+    }
+
+    .botao2 input{
+        letter-spacing: 0;
+        padding: 15px 20px;
+        font-size: 10px;
+    }
+
+    /* Menu Desktop */
+    header nav.menu-desktop{
+        width: 40%;
+    }
+
+    header nav.menu-desktop ul li{
+        font-size: 15px;
+    }
+
+    /* conteudo */
+    .txt-post{
+        margin-left: 10px;
+    }
+
+    hr{
+        margin-top: 30px;
+    }
+
+    /* Informações */
+    section.info{
+        width: calc(100%/1);
+    }
+
+    section.info .foto{
+        width: 100%;
+    }
+
+    section.info .text-info{
+        width: 100%;
+    }
+
+    section.info .info-img img{
+        width: 100%;
+        height: 400px;
+        margin: 20px 10px;
+    }
+
+    section.info .text-info input{
+        margin: 30px 0;
+    }
+
+    /* Cards */
+    .back-card{
+        width: calc(70%/2);
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Logo */
+    header .logo{
+        width: 90%;
+    }
+
+    /* Ocultando Menu Desktop */
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    /* Ocultando Botões */
+    header .botao{
+        display: none;
+    }
+
+    /* Menu Mobile */
+    header nav.menu-mobile{
+        display: block;
+    }
+
+    header nav.menu-mobile h2{
+        width: 100%;
+        line-height: 10px;
+        color: white;
+        cursor: pointer;
+    }
+
+    header nav.menu-mobile ul{
+        width: 0;
+        height: 100vh;
+        transition: 1s;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        padding: 50px 0;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+    }
+
+    header nav.menu-mobile ul li{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    header nav.menu-mobile ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav.menu-mobile .botao1 input{
+        width: 100%;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    header nav.menu-mobile .botao2 input{
+        width: 100%;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    /* conteudo */
+    .post-1{
+        width: 100%;
+    }
+
+    .txt-post h2{
+        font-size: 40px;
+    }
+
+    .txt-post p{
+        font-size: 14px;
+    }
+
+    /* Informações */
+    section.info .info-img img{
+        width: 90%;
+        height: 90%;
+        margin: 20px 10px;
+    }
+
+    section.info .text-info{
+        padding: 0 10px;
+    }
+
+    section.info .text-info h2{
+        font-size: 40px;
+    }
+    
+    hr{
+        width: 100px;
+    }
+    
+    section.info .text-info p{
+        font-size: 14px;
+        text-align: start;
+    }
+    
+    section.info .text-info input{
+        margin: 30px 0;
+    }
+
+    /* Cards */
+    .back-card{
+        width: calc(70%/1);
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    /* Rodapé */
+    footer p{
+        font-size: 12px;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    /* Informações */
+    section.info .text-info h2{
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    
+    hr{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 50px;
+    }
+    
+    section.info .text-info p{
+        font-size: 12px;
+        text-align: start;
+    }
+    
+    section.info .text-info input{
+        padding: 10px 15px;
+        font-size: 8px;
+        margin: 30px 0;
+    }
+
+    /* Rodapé */
+    footer p{
+        font-size: 10px;
+    }
+}
